@@ -4,6 +4,9 @@ from typing import List, Optional
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> Optional[List[int]]:
+        '''
+        This is the first problem of the sheet. 
+        '''
         dict_of_target_and_index = {nums[i]:i for i in range(len(nums))}
 
         for i in range(len(nums)):
