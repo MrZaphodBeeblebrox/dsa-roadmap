@@ -3,19 +3,16 @@ class Solution:
         if len(t) != len(s):
             return False
         else:
-            no_of_letters = {}
+            list_of_alphabets = [0] * 26
+            for i, j in zip(s, t):
+                list_of_alphabets[ ord(i) - ord('a')] += 1
+                list_of_alphabets[ ord(j) - ord('a')] -= 1
 
-            ctr = 0
-            while ctr < len(s):
-                no_of_letters[s[ctr]] = no_of_letters.get(s[ctr], 0) + 1
-                no_of_letters[t[ctr]] = no_of_letters.get(t[ctr], 0) - 1
-                ctr += 1
-
-            return all(count == 0 for count in no_of_letters.values())
+            return all(count == 0 for count in list_of_alphabets)
 
 def main():
     sol = Solution()
-    sol.isAnagram("anagram", 'anagram')
+    sol.isAnagram("car", 'rat')
 
 
 if __name__ == '__main__':

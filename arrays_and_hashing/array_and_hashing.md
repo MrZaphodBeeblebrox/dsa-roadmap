@@ -11,3 +11,8 @@ Valid Anagrams
   Why this could have been better, cause don't need a list, can iterate a string. 
   Can have a single dict instead of double. For single dict, keep the keys as letters and values as count, add for one string and subtract for another, thus for each letter the value should be 0. If yes true else false. 
  
+Contains Duplicate
+- I used the 'set' of python, this was a very pythonic solution, I compared the len of the total letters, with the set of numbers to identify the uniqueness of each letter. 
+
+Group Anagrams.
+- The biggest learning here is that the keys of the dictionary are hashable and immutable. And as dict and list are mutable, strings and tuples are immutable and can be used as dict keys. With this newly found knowledge or could be categorized as forgotton knowledge, I was able to create a dict of anagrams with tuples representing the whole group of anagrams, in a single pass. 
