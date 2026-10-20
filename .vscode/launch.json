@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug top_k_elements_using_heap",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "arrays_and_hashing.top_k_elements_using_heap",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
