@@ -23,4 +23,3 @@ Top K Frequent Elements
 - Root has the highest value node, represent in Binary Tree, starting from left. 
 - Each parent has two child, both are smaller than the parent and that's the whole logic
 - For extract max you take of the zeroth index and put the last element at the front and then apply logic of swapping child w/ parent if child is greater than parent.
-
